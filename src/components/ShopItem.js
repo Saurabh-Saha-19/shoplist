@@ -4,7 +4,7 @@ import { Checkbox } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { removeShop } from "../features/shopSlice";
 
-const ShopItem = ({ name, area, shopType, id, remove }) => {
+const ShopItem = ({ name, area, shopType, id }) => {
   const dispatch = useDispatch();
   const handleChange = () => {
     dispatch(removeShop(id));
@@ -13,7 +13,7 @@ const ShopItem = ({ name, area, shopType, id, remove }) => {
   return (
     <div className="shopItem">
       <Checkbox
-        checked={remove}
+        checked={false}
         color="primary"
         onChange={handleChange}
         inputProps={{ "aria-label": "secondary checkbox" }}

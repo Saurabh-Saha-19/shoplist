@@ -21,7 +21,6 @@ function App() {
               area={item.shopArea}
               shopType={item.shopType}
               id={item.id}
-              remove={item.remove}
             />
           ))}
         </div>
