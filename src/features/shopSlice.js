@@ -11,9 +11,17 @@ const shopSlice = createSlice({
     saveShop: (state, action) => {
       state.shopList.push(action.payload);
     },
+
+    removeShop: (state, action) => {
+      state.shopList = state.shopList.filter(
+        (item) => item.id !== action.payload
+      );
+    },
   },
 });
 
-export const { saveShop } = shopSlice.actions;
+export const { saveShop, removeShop } = shopSlice.actions;
+
+export const selectShopList = (state) => state.shops.shopList;
 
 export default shopSlice.reducer;

@@ -4,8 +4,9 @@ label {
 }
 .input {
     font-family: 'Chilanka', cursive;
-    height: 50px;
-    width: 80%;
+    height: 80px;
+    width: 85%;
+    padding: 0px 10px;
     border-radius: 12px;
     background-color: white;
     display: flex;

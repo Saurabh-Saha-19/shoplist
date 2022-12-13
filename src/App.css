@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300&display=swap');
 .App {
   height: 100vh;
   width: 100vw;
@@ -7,6 +7,26 @@
   place-items: center;
 }
 
+.app__container {
+  height: 500px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(232, 234, 237);
+  border-radius: 12px;
+  padding: 32px 0;
+
+}
+
+.shoplist__container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
 h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Sulphur Point', sans-serif;
+  font-style: normal;
 }

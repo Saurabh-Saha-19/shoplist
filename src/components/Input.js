@@ -19,9 +19,10 @@ const Input = () => {
     dispatch(
       saveShop({
         id: Date.now(),
+        remove: false,
         shopName: input,
         shopArea: area,
-        shopType: [checked1, checked2, checked3, checked4],
+        shopType: checked1 || checked2 || checked3 || checked4,
       })
     );
   };
