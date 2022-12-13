@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Source+Sans+Pro&display=swap');
+label {
+    margin-left: 5px;
+}
+.input {
+    font-family: 'Chilanka', cursive;
+    height: 50px;
+    width: 80%;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-family: 'Chilanka', cursive;
+    background: none;
+    border: none;
+    margin-left: 12px;
+    flex: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    margin-right: 8px;
+    background-color: rgb(214, 213, 213);
+    border: none;
+    font-family: 'Chilanka', cursive;
+    border-radius: 10px;
+    height: 30px;
+    width: 50px;
+
+}
