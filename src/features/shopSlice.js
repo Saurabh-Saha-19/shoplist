@@ -17,10 +17,23 @@ const shopSlice = createSlice({
         (item) => item.id !== action.payload
       );
     },
+
+    filterShop: (state, action) => {
+      state.shopList = state.shopList.filter(
+        (item) => item.shopType !== action.payload
+      );
+    },
+
+    filterShopArea: (state, action) => {
+      state.shopList = state.shopList.filter(
+        (item) => item.shopArea !== action.payload
+      );
+    },
   },
 });
 
-export const { saveShop, removeShop } = shopSlice.actions;
+export const { saveShop, removeShop, filterShop, filterShopArea } =
+  shopSlice.actions;
 
 export const selectShopList = (state) => state.shops.shopList;
 

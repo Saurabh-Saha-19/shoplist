@@ -1,29 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300&display=swap');
 .App {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  background-color: rgb(168, 173, 182);
+  background-color: #c4e6eb;
   display: grid;
   place-items: center;
 }
 
 .app__container {
-  height: 400px;
-  width: 80vw;
+  min-height: 400px;
+  width: 90vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: rgb(232, 234, 237);
+  background-color: #d5edf1;
   border-radius: 12px;
   padding: 32px 0;
+  align-items: center;
 
 }
 
-.shoplist__container {
+.firstTwoComp {
   flex: 1;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+}
+
+.shoplist__container {
+  align-items: center;
+  width: auto;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.shoplistfilter__container {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  width: auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 20px;
+  margin-right: 50px;
+
+}
+
+.shopAreafilter__container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 h1 {

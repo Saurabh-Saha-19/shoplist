@@ -24,6 +24,8 @@ const Input = () => {
         shopType: checked1 || checked2 || checked3 || checked4,
       })
     );
+    setInput("");
+    setArea("");
   };
 
   return (

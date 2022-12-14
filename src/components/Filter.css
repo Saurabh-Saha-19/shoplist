@@ -1,0 +1,11 @@
+
+.filter {
+    font-family: 'Chilanka', cursive;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter>p {
+    flex: 1;
+}
